@@ -23,18 +23,44 @@
         <h1>Fancy Events</h1>
         <nav>
             <ul>
-                <li><a href="#Rentals">Rentals</a></li>
                 <li><a href="#Services">Services</a></li>
-                <li><a href="#ContactUs">Contact Us</a></li>
+                <li><a href="#Rentals">Rentals</a></li>
+                <li><a href="#ContactUs">Get a Quote</a></li>
             </ul>
         </nav>
 
     </header>
     <main>
-        <img src="images/wedding.jpeg" alt="Wedding table setup with green flowers and candles">
+        <img src="images/wedding.jpeg" alt="Wedding table setup with green flowers and candles" width="900" height="400">
         <h2>Every detail matters. Every moment counts.</h2>
 
-        
+
+
+        <h2>Your Journey Start Here</h2>
+        <h3>Get a Quote</h3>
+        <form>
+            <label for="fName">Full Name</label>
+            <input type="text" name="fName" id="fName" required>
+
+            <label for="PhoneNumber">Phone Number</label>
+            <input type="tel" name="PhoneNumber" id="PhoneNumber">
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+
+            <label for="comment">Comments</label>
+            <textarea name="comment" id="comment" required></textarea>
+
+            <fieldset>
+                <legend> Preferred method of Contact</legend>
+
+                <input type="radio" name="p-Contact" id="p-email" value="p-email" checked>
+                <label for="p-email">Email</label>
+               
+                <input type="radio" name="p-Contact" id="p-phone" value="p-phone">
+                <label for="p-phone">Phone</label>
+            </fieldset>
+        </form>
 
     </main>
     <footer></footer>
