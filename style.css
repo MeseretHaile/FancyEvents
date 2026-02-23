@@ -1,0 +1,118 @@
+/* CSS BY Meseret Haile */
+/* Imported Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
+
+/* CSS reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*root variables*/
+:root{
+}
+
+body{
+ 
+    background-color: #f7e6ca;
+    min-width: 1280px;
+    
+}
+img {
+    width: 100%;
+}
+
+/* Header Style */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #c2b280;
+    position: sticky;
+    top: 0;
+
+}
+header img{
+    border-radius: 100%;
+    width: 5%;
+
+}
+
+header h1{
+    font-family: "kavoon", serif;
+    font-size: 40px;
+    margin-left: 0;
+    padding: 40px;
+}
+
+nav ul{
+    display: flex;
+    gap: 30px;
+    padding-right: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    font-family: "kavoon", sans-serif;
+    color: var(--dk-gray);
+    font-size: 16px;
+}
+
+nav a:hover{
+    color: var(--pink)
+}
+
+main > img{
+    width: 100%;
+    opacity: 50%;
+}
+
+main > h2:first-of-type{
+    font-family: "kavoon", serif;
+    text-align: center;
+    font-size: 60px;
+}
+
