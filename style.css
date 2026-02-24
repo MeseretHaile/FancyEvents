@@ -73,6 +73,7 @@ header {
     background-color: #c2b280;
     position: sticky;
     top: 0;
+    z-index: 1000;
 
 }
 header img{
@@ -105,14 +106,24 @@ nav a:hover{
     color: var(--pink)
 }
 
-main > img{
+.slogan{
     width: 100%;
-    opacity: 50%;
+    background:
+    linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.50)),
+    url("images/wedding.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
 }
 
-main > h2:first-of-type{
-    font-family: "kavoon", serif;
-    text-align: center;
-    font-size: 60px;
+.slogan > h2{
+    font-size:60px;
+    color:white;
+    text-align:center;
+    padding: 25px 40px;
 }
 
