@@ -1,6 +1,6 @@
 /* CSS BY Meseret Haile */
 /* Imported Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Script&display=swap');
 
 /* CSS reset */
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -59,6 +59,7 @@ body{
  
     background-color: #f7e6ca;
     min-width: 1280px;
+    line-height: 1.5;
     
 }
 img {
@@ -70,7 +71,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #c2b280;
+    background-color: #e5c080;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -82,11 +83,11 @@ header img{
 
 }
 
-header h1{
-    font-family: "kavoon", serif;
-    font-size: 40px;
+h1{
+    font-family: "Luxurious Script";
+    font-size: 80px;
     margin-left: 0;
-    padding: 40px;
+    padding: 5px;
 }
 
 nav ul{
@@ -113,17 +114,134 @@ nav a:hover{
     url("images/wedding.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 90vh;
+    height: 85vh;
     display: flex;
     justify-content: center;
     align-items: center;
  
 }
+h2{
+    font-size: 3rem;
+}
 
 .slogan > h2{
     font-size:60px;
-    color:white;
+    color:rgb(227, 215, 154);
     text-align:center;
     padding: 25px 40px;
 }
+
+.about{
+    padding: 50px 40px;
+    text-align: center;
+}
+
+.about h2{
+    font-family:"Kavoon", serif;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+
+.about p{
+    max-width: 1000px;  
+    margin: 0 auto;    
+    font-family:"Inter", sans-serif;
+    font-size:1.5rem;
+
+    color:#333;
+
+   
+    padding:40px;
+}
+
+.services{
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.services h3{
+    font-family: "Luxurious Script", serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.serviceList{
+    display: none;
+   
+    border-radius: 20px;
+    
+}
+
+.serviceList.active{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px;
+    column-gap: 10px;
+    align-items: stretch;
+}
+
+.serviceList.active section{
+    background-color: white;
+    padding: 25px;
+    border-radius: 18px;
+}
+
+.serviceList img{
+    width: 80%;
+    height: 500px;
+    object-fit: cover;
+    justify-self:center;
+}
+
+.serviceText{
+    text-align: left;
+    
+}
+
+.serviceText p{
+    font-weight: bold;
+    font: 100px;
+}
+
+.serviceText ul{
+    padding-left: 18px;
+    line-height: 1.8;
+}
+
+.serviceLink{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto ;
+}
+
+.tab{
+    text-decoration: none;
+    font-family:"Inter", sans-serif;
+    font-size: 16px;
+    color: black;
+    padding-bottom: 8px;
+    position: relative;
+}
+
+.tab:hover{
+    opacity: 0.7;
+}
+
+.tab.active::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background: #1e1e1e;
+}
+
+
+
 

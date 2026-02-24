@@ -32,21 +32,29 @@
     </header>
     <main>
         <section class="slogan">
-        <h2>Every detail matters.<br> Every moment counts.</h2>
+        <h2>Every detail matters<br> Every moment counts</h2>
         </section>
-        <section class="aboutUs">
+
+        <section class="about">
             <h2>About Us</h2>
 
             <p>Fancy Events established in 2021. Our decor company was built with a passion for turning imagination into life. We offer many decor services like birthday, graduation, wedding, baby shower, baptism, and so on. We feel that even the smallest of events deserve special attention and care. In addition to full event decoration services, we also offer rental services for clients who only need our decor items or professional staff support. Our goal is to make every celebration stress-free and memorable.</p>
         </section>
-        <section>
-            <h3>Services</h3>
+
+        <section class="services" id="Services">
+            <h2>Services</h2>
             
-            <ul>
-                <li>
-                    Wedding Decor
-                    <img src="images/Table.jpeg" alt="wedding table setup">
+            <section class="serviceList active" id="wedding">
+                <section>
+                    <h3>Wedding Decor</h3>
+                <img src="images/Table.jpeg" alt="wedding table setup">
+                </section>
+                
+
+                <section class="serviceText">
                     <p>Wedding Full Package includes</p>
+                    <hr>
+                   
                     <ul>
                         <li>Stage decor</li>
                         <li>Welcome sign</li>
@@ -54,16 +62,23 @@
                         <li>Artificial or fresh floral arrangements</li>
                         <li>Dance floor</li>
                         <li>Lighting & extras </li>
+                        <li>Chiavari chairs</li>
                         <li>Delivery and pickup</li>
-                        <li>Add-ons available</li>
-                        
+                        <li>Add-ons available</li>   
                     </ul>
                     <button type="submit">Get a Quote</button>
-                </li>
-                <li>
-                    Birthday Decor
-                    <img src="images/birthday.jpeg" alt="Blue birthday decor with balloon">
+                </section>
+            </section>
+
+            <section class="serviceList" id="birthday">
+                <section>
                     <p>Birthday Package</p>
+                    <img src="images/birthday.jpeg" alt="Blue birthday decor with balloon">
+                </section>
+                
+                <section class="serviceText">
+                    <h3>Birthday Decor</h3>
+                    
                     <ul>
                         <li>Balloon garland</li>
                         <li>Backdrop</li>
@@ -75,12 +90,18 @@
                         <li>Add-ons available</li>
                     </ul>
                     <button type="submit">Get a Quote</button>
-                
-                </li>
+                </section>
+            </section >
 
-                <li>
-                    Graduation Decor
-                    <img src="" alt="">
+            <section class="serviceList" id="graduation">
+                <section>
+                    <h3>Graduation Decor</h3>
+                    <img src="images/Grad.jpeg" alt="Golden and black Graduation balloon ">
+                </section>
+                
+
+                <section class="serviceText">
+                    
                     <p>Graduation Package</p>
                     <ul>
                         <li>Custom graduation backdrop</li>
@@ -92,11 +113,20 @@
                         <li>Add-ons available</li>
                     </ul>
                     <button type="submit">Get a Quote</button>
-                </li>
-                <li>
-                    Baby Shower Decor
+                </section>
+            </section>
+
+            <section class="serviceList" id="babyShower">
+                <section>
+                    <h3>Baby Shower Decor</h3>
                     <img src="images/babyShower.jpeg" alt="Baby shower decor with floral in tent">
+                </section>
+                
+                
+                <section class="serviceText">
+                   
                     <p>Baby shower Package</p>
+                   
                     <ul>
                         <li>Custom baby shower backdrop</li>
                         <li>Balloon garland or floral setup</li>
@@ -109,10 +139,16 @@
 
                     </ul>
                     <button type="submit">Get a Quote</button>
-                </li>
-                
-            </ul>
-            
+                </section>
+            </section>
+
+            <section class="serviceLink">
+                <a href="#wedding" class="tab active">Wedding</a>
+                <a href="#birthday" class="tab">Birthday</a>
+                <a href="#graduation" class="tab">Graduation</a>
+                <a href="#babyShower" class="tab">Baby Shower</a>
+              </section>
+
         </section>
         
         <section>
