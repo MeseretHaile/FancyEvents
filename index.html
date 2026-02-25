@@ -19,7 +19,6 @@
 <body>
     <header>
         <!--Logo-->
-        <img src="images/logo.webp" alt="Fancy Event logo">
         <h1>Fancy Event</h1>
         <nav>
             <ul>
@@ -32,13 +31,14 @@
     </header>
     <main>
         <section class="slogan">
-        <h2>Every detail matters<br> Every moment counts</h2>
+            <h2>Every detail matters<br> Every moment counts</h2>
         </section>
 
         <section class="about">
             <h2>About Us</h2>
 
-            <p>Fancy Events established in 2021. Our decor company was built with a passion for turning imagination into life. We offer many decor services like birthday, graduation, wedding, baby shower, baptism, and so on. We feel that even the smallest of events deserve special attention and care. In addition to full event decoration services, we also offer rental services for clients who only need our decor items or professional staff support. Our goal is to make every celebration stress-free and memorable.</p>
+            <p>Fancy Events established in 2021. Our decor company was built with a passion for turning imagination into life. We offer many decor services like birthday, graduation, wedding, baby shower, baptism, and so on. We feel that even the smallest of events deserve special attention and care. In addition to full event decoration services, we also offer rental services for clients who only need our decor items or professional staff support. </p>
+            <p>Our goal is to make every celebration stress-free and memorable.</p>
         </section>
 
         <section class="services" id="Services">
@@ -72,13 +72,12 @@
 
             <section class="serviceList" id="birthday">
                 <section>
-                    <p>Birthday Package</p>
+                    <h3>Birthday Decor</h3>
                     <img src="images/birthday.jpeg" alt="Blue birthday decor with balloon">
                 </section>
                 
                 <section class="serviceText">
-                    <h3>Birthday Decor</h3>
-                    
+                    <p>Birthday Package</p>
                     <ul>
                         <li>Balloon garland</li>
                         <li>Backdrop</li>
@@ -147,58 +146,60 @@
                 <a href="#birthday" class="tab">Birthday</a>
                 <a href="#graduation" class="tab">Graduation</a>
                 <a href="#babyShower" class="tab">Baby Shower</a>
-              </section>
+            </section>
 
         </section>
         
         <section>
             <h3>Rentals</h3>
         </section>
-        <section>
+
+        <section class = "playGame">
             <p>Want a discount for your upcoming event?</p>
             <h2>Play & Win</h2>
-            <form>
+            <form class ="gameForm" onsubmit="checkGuess(event)">
                 <label for="number">Enter a Number Between 1 and 10: </label>
                 <input type="number" name="name" id="number">
                 <button type="submit">Play</button>
-                
             </form>
-            
+            <p id="message"></p>
+            <div class="numberDisplay" id="winningNumber"></div>
 
         </section>
         
+        <section class = "quoteSection" id="contactUs">
+            
+            <div class="quoteCard">
+                <h2>Your Journey Starts Here</h2>
+                <img class="quoteLogo" src="images/logo.webp" alt="Fancy Event logo">
+                <p>Get a Quote</p>
+                <form class="quoteForm">
+                    <label for="fName">Full Name</label>
+                    <input type="text" name="fName" id="fName" required>
 
+                    <label for="PhoneNumber">Phone Number</label>
+                    <input type="tel" name="PhoneNumber" id="PhoneNumber">
 
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
 
+                    <label for="comment">Comments</label>
+                    <textarea name="comment" id="comment" required></textarea>
 
-        <section>
-            <h2>Your Journey Starts Here</h2>
-            <p>Get a Quote</p>
-            <form>
-                <label for="fName">Full Name</label>
-                <input type="text" name="fName" id="fName" required>
+                    <fieldset>
+                        <legend> Preferred method of Contact</legend>
 
-                <label for="PhoneNumber">Phone Number</label>
-                <input type="tel" name="PhoneNumber" id="PhoneNumber">
+                        <input type="radio" name="p-Contact" id="p-email" value="p-email" checked>
+                        <label for="p-email">Email</label>
+                    
+                        <input type="radio" name="p-Contact" id="p-phone" value="p-phone">
+                        <label for="p-phone">Phone</label>
+                    </fieldset>
 
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email">
-
-                <label for="comment">Comments</label>
-                <textarea name="comment" id="comment" required></textarea>
-
-                <fieldset>
-                    <legend> Preferred method of Contact</legend>
-
-                    <input type="radio" name="p-Contact" id="p-email" value="p-email" checked>
-                    <label for="p-email">Email</label>
-                
-                    <input type="radio" name="p-Contact" id="p-phone" value="p-phone">
-                    <label for="p-phone">Phone</label>
-                </fieldset>
-
-                <button type="submit">Get a Quote</button>
-            </form>
+                    <button type="submit">Get a Quote</button>
+                </form>
+            </div>
+            
          </section>
     </main>
     <footer></footer>
