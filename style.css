@@ -54,15 +54,30 @@ table {
 
 /*root variables*/
 :root{
+    --bg-color: #f7e6ca;
+    --header-bg: #e5c080;
+    --var-lcream:#FFEAAB;
+    --var-coff: #8A5E10;
+    --var-gold: #DAA520;
+    --var-pepper: #FFB248;
+    
+
+}
+
+body.dark{
+    --bg-color: #0f1720;
+    --text-color: #f5f5f5;
+    --header-bg: #121a24;
+    --card-bg: #1b2633;
+    --accent: #ff7a95;
 }
 
 body{
- 
-    background-color: #f7e6ca;
+    background-color: var(--bg-color);
     min-width: 1280px;
-    line-height: 1.5;
-    
+    line-height: 1.5;   
 }
+
 img {
     width: 100%;
 }
@@ -72,16 +87,16 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #e5c080;
+    background-color: var(--header-bg);
     position: sticky;
     top: 0;
     z-index: 1000;
 
 }
+
 header img{
     border-radius: 100%;
     width: 5%;
-
 }
 
 h1{
@@ -105,8 +120,21 @@ nav a{
 }
 
 nav a:hover{
-    color: var(--pink)
+    color: var(--)
 }
+
+.themeBtn{
+    background:none;
+    border:none;
+    font-size:20px;
+    cursor:pointer;
+    margin-left:10px;
+    transition:0.3s;
+  }
+  
+  .themeBtn:hover{
+    transform:scale(1.2);
+  }
 
 .slogan{
     width: 100%;
@@ -137,6 +165,7 @@ h2{
 .about{
     padding-top: 50px;
     text-align: center;
+   
 }
 
 .about h2{
@@ -185,11 +214,6 @@ h2{
     align-items: stretch;
 }
 
-.serviceList.active section{
-    background-color: rgb(113, 71, 28);
-    padding: 25px;
-    border-radius: 18px;
-}
 
 .serviceList img{
     width: 80%;
@@ -307,7 +331,7 @@ h2{
 
 .quoteSection h2{
     font-family: "Kavoon", serif;
-    color: red;
+    color: var(--var-gold);
     font-size: 35px;
     text-align: center;
     margin-bottom: 8px;
@@ -341,44 +365,24 @@ h2{
 .quoteForm label{
     display: block;
     font-family: "Inter", sans-serif;
-    font-size: 13px;
-    font-weight: 600;
+    font-size: 1.5rem;
     margin-top: 18px;
     margin-bottom: 8px;
 }
 
 .quoteForm input,
 .quoteForm textarea{
-    width: 100%;
-    border: none;
-    border-bottom: 2px solid #111;
-    padding: 10px 6px;
-    font-family: "Inter", sans-serif;
-    font-size: 14px;
-    background: transparent;
-    outline: none;
-}
-
-.quoteForm textarea{
-    border: 2px solid #111;
+    border: 2px solid var(--var-gold);
     border-radius: 8px;
     margin-top: 6px;
     resize: vertical;
+    width: 90%;
+    font-size: 1.5rem;
 }
 
-fieldset{
-    border: none;
-    margin-top: 22px;
-    padding: 0;
-}
 
-fieldset legend{
-    font-family: "Inter", sans-serif;
-    font-weight: 700;
-    font-size: 13px;
-    margin-bottom: 10px;
-    color: red;
-}
+
+
 
 fieldset label{
     display: inline-flex;
@@ -386,6 +390,22 @@ fieldset label{
     gap: 8px;
     margin-right: 16px;
     margin-top: 0;
+}
+form button:last-of-type{
+    display: block;
+    color:#f5f5f5;
+    background-color: #8A5E10;
+    margin: 10px;
+    padding: 10px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Lora", serif;
+    
+}
+form button:last-of-type:hover{
+    background-color: #DAA520;
 }
     
 
