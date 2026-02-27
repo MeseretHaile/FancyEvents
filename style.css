@@ -238,8 +238,6 @@ main section:nth-of-type(2){
     
 }
 
-
-
 .serviceText p{
    color: var(--var-coff);
     font-size: 2rem;
@@ -474,13 +472,11 @@ span{
 footer{
     background-color: var(--header-bg);
     padding: 20px;
+    text-align: center;
     
 }
 footer img{
     width: 35px;
-}
-footer section {
-    align-items: center;
 }
 
     
