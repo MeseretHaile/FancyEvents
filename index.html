@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="style.css">
 
     <!--Link to script-->
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 
 </head>
 <body>
@@ -60,7 +60,6 @@
                             <li>Welcome sign</li>
                             <li>Guest table and centerpieces</li>
                             <li>Artificial or fresh floral arrangements</li>
-                            <li>Dance floor</li>
                             <li>Lighting & extras </li>
                             <li>Chiavari chairs</li>
                             <li>Delivery and pickup</li>
@@ -145,7 +144,7 @@
                 </section>
 
                 <section class="serviceLink">
-                    <a href="#wedding" class="tab active">Wedding</a>
+                    <a href="#wedding" class="tab">Wedding</a>
                     <a href="#birthday" class="tab">Birthday</a>
                     <a href="#graduation" class="tab">Graduation</a>
                     <a href="#babyShower" class="tab">Baby Shower</a>
@@ -178,15 +177,21 @@
                 <p>Get a Quote</p>
                 <form class="quoteForm">
                     <label for="fName">Full Name<span class="required">*</span></label>
+                    <span class="eMessage">Please enter your full name</span>
                     <input type="text" name="fName" id="fName" required>
+                    
 
                     <label for="PhoneNumber">Phone Number</label>
+                    <span class="eMessage">Please add a phone Number below </span>
                     <input type="tel" name="PhoneNumber" id="PhoneNumber">
 
                     <label for="email">Email</label>
+                    <span class="eMessage">Please add a email below </span>
                     <input type="email" name="email" id="email">
+                   
 
                     <label for="comment">Comments<span class="required">*</span></label>
+                    <span class="eMessage">Please add a comment below </span>
                     <textarea name="comment" id="comment" required></textarea>
 
                     <fieldset>
@@ -199,7 +204,7 @@
                         <label for="p-phone">Phone</label>
                     </fieldset>
 
-                    <button type="submit">Submit</button>
+                    <button type="submit" id="submit">Submit</button>
                 </form>
             </div>
             
