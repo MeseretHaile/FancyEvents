@@ -55,13 +55,16 @@ table {
 /*root variables*/
 :root{
     --bg-color: #f7e6ca;
+
     --header-bg: #e5c080;
-    --var-lcream:#FFEAAB;
-    --var-coff: #8A5E10;
-    --var-gold: #DAA520;
-    --var-pepper: #FFB248;
-    --var-offwhite: #fffbf4;
-    --var-dkbwm: #af8a4d;
+
+    --bg-offwhite: #fffbf4;
+
+    --bg-lcream:#FFEAAB;
+    --bg-coff: #8A5E10;
+    --bg-gold: #DAA520;
+    
+    --bg-bwm: #af8a4d;
     --dk-gry: #464646;
 
     
@@ -69,11 +72,12 @@ table {
 }
 
 body.dark{
-    --bg-color: #0f1720;
-    --var-white: #f6f6f6;
-    --header-bg: #121a24;
-    --card-bg: #1b2633;
-    --accent: #ff7a95;
+    --dkh-color: #fffbf4;
+    --dkat-white: #FFFDD0;
+    --dk-bg: #1A1A1A;
+    --dk-bg:#402b26;
+    --dk: #ff7a95;
+    --coff: #6f4e37;
 }
 
 body{
@@ -131,19 +135,6 @@ nav a:hover{
     color: var(--var-coff)
 }
 
-.themeBtn{
-    background:none;
-    border:none;
-    font-size:20px;
-    cursor:pointer;
-    margin-left:10px;
-    transition:0.3s;
-  }
-  
-  .themeBtn:hover{
-    transform:scale(1.2);
-  }
-
 .slogan{
     width: 100%;
     background:
@@ -191,20 +182,20 @@ main section:nth-of-type(2){
     max-width: 900px;  
     margin: 0 auto;    
     font-family: "Lora", serif;
-    font-size:1.5rem;
-    padding:30px;
-    color:var(--dk-gry);
+    font-size: 1.5rem;
+    padding: 30px;
+    color: var(--dk-gry);
 }
 .about p:nth-of-type(2){
     font-weight: bold;
     font-size: 2rem;
-    color: var(--var-dkbwm);
+    color: var(--bg-bwm);
 
 }
 .services{
     padding: 40px 20px;
     text-align: center;
-    background-color: var(--var-offwhite);
+    background-color: var(--bg-offwhite);
     border-radius: 8px;
 }
 
@@ -226,7 +217,7 @@ main section:nth-of-type(2){
     padding: 30px;
     column-gap: 10px;
     align-items: stretch;
-    background-color: var(--var-white);
+    background-color: var(--bg-offwhite);
 }
 
 
@@ -239,7 +230,7 @@ main section:nth-of-type(2){
 }
 
 .serviceText p{
-   color: var(--var-coff);
+   color: var(--bg-coff);
     font-size: 2rem;
 }
 
@@ -288,13 +279,11 @@ hr{
     opacity: 0.7;
 }
 
-
-
 .playGame{
-    background: #af8a4d;
+    background: var(--bg-bwm);
     padding: 60px 20px;
     text-align: center;
-    color: var(--var-white);
+    color: var(--bg-offwhite);
 }
 
 .playGame p{
@@ -329,17 +318,6 @@ hr{
     margin-top:10px;
 }
 
-.playGame button{
-    padding:10px 18px;
-    background:#d9526f;
-    color:white;
-    border:none;
-    border-radius:6px;
-    cursor:pointer;
-    font-weight:bold;
-  }
-
-
 .quoteSection{
     padding: 100px 20px;
     display: flex;
@@ -349,7 +327,7 @@ hr{
 
 .quoteSection h2{
     font-family: "Kavoon", serif;
-    color: var(--var-gold);
+    color: var(--bg-gold);
     font-size: 35px;
     text-align: center;
     margin-bottom: 8px;
@@ -357,7 +335,7 @@ hr{
 
 .quoteCard{
     width: 500px;
-    background-color: var(--var-offwhite);
+    background-color: var(--bg-offwhite);
     padding: 50px 45px;
     border-radius: 16px;
     text-align: center;
@@ -376,11 +354,11 @@ hr{
     margin-bottom: 25px;
 }
 
-.quoteForm{
+#quoteForm{
     text-align: left;
 }
 
-.quoteForm label{
+#quoteForm label{
     display: block;
     font-family: "Inter", sans-serif;
     font-size: 1.5rem;
@@ -388,9 +366,9 @@ hr{
     margin-bottom: 8px;
 }
 
-.quoteForm input,
-.quoteForm textarea{
-    border: 2px solid var(--var-gold);
+#quoteForm input,
+#quoteForm textarea{
+    border: 2px solid var(--bg-gold);
     border-radius: 8px;
     margin-top: 6px;
     resize: vertical;
@@ -405,11 +383,13 @@ fieldset label{
     margin-right: 16px;
     margin-top: 0;
 }
-form button:last-of-type{
+
+form button{
     display: block;
-    color:#f5f5f5;
-    background-color: #8A5E10;
-    margin: 10px;
+    color: var(--bg-offwhite);
+    border:none;
+    background-color: var(--bg-coff);
+    margin: 20px auto;
     padding: 10px 30px;
     border-radius: 8px;
     cursor: pointer;
@@ -417,13 +397,13 @@ form button:last-of-type{
     font-size: 1.5rem;
     font-family: "Lora", serif;
    
-    
 }
-form button:last-of-type:hover{
-    background-color: #DAA520;
+
+form button:hover{
+    background-color: var(--bg-gold);
 }
 fieldset{
-    border: 2px solid var(--var-coff);
+    border: 2px solid var(--bg-coff);
     padding: 5px;
     display: flex;
 }
