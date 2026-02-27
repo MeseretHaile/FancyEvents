@@ -458,6 +458,19 @@ span{
     display: block;
 }
 
+#success{
+	box-shadow: none;
+	border: none;
+}
+
+#success.hide{
+  display: none;
+}
+
+#success.show{
+  display: block;
+}
+
 footer{
     background-color: var(--header-bg);
     padding: 20px;

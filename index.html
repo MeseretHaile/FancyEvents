@@ -175,6 +175,11 @@
                 <h2>Your Journey Starts Here</h2>
                 <img class="quoteLogo" src="images/logo.webp" alt="Fancy Event logo">
                 <p>Get a Quote</p>
+                <div id="success" class="hide">
+                    <h4>Thank you!</h4>
+                    <p>You have successfully submitted the form. Here is the information you sent us:</p>
+                    <p id="formSub"></p>
+                </div>
                 <form class="quoteForm">
                     <label for="fName">Full Name<span class="required">*</span></label>
                     <span class="eMessage">Please enter your full name</span>
@@ -183,7 +188,7 @@
 
                     <label for="PhoneNumber">Phone Number</label>
                     <span class="eMessage">Please add a phone Number below </span>
-                    <input type="tel" name="PhoneNumber" id="PhoneNumber">
+                    <input type="tel" name="phoneNumber" id="phoneNumber">
 
                     <label for="email">Email</label>
                     <span class="eMessage">Please add a email below </span>
@@ -208,7 +213,8 @@
                 </form>
             </div>
             
-         </section>
+        </section>
+        
     </main>
     <footer>
         <section>
