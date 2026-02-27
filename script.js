@@ -30,6 +30,33 @@ function changeService(event){
     }
 }
 
+// script for play and win section
+
+document.addEventListener("DOMContentLoaded", playWin);
+
+function playWin(){
+    let play = document.getElementById("play");
+    play.addEventListener("click", matchNumber);
+}
+
+function matchNumber(e) {
+    e.preventDefault(); 
+    const randomNum = Math.floor(Math.random() * 9) + 1;
+    const numInput = parseFloat(document.getElementById("number").value.trim());
+
+    if(numInput === randomNum){
+        document.getElementById("winningNumber").innerHTML = `<strong>Your Number: </strong>${numInput}<br><strong>Winning Number: </strong>${randomNum}<br><strong>Congratulations You Win!</strong>`
+    }
+    else if(numInput !== "" && numInput !== randomNum){
+        document.getElementById("winningNumber").innerHTML = `<strong>Your Number: </strong>${numInput}<br><strong>Winning Number: </strong>${randomNum}<br><strong>Sorry Try Again!</strong>`
+    }
+
+}
+
+
+
+
+
 //validate form section
 //register a handler for the form
 document.addEventListener("DOMContentLoaded", formValidCheck);
@@ -65,7 +92,7 @@ function validCheck(e){
 
     eMessage[1].classList.remove("error");
     eMessage[2].classList.remove("error");
-    let PhoneNumberReg = /^\d{9}$/;
+    let PhoneNumberReg = /^\d{10}$/;
 
     let emailRadio = document.getElementById("p-email");
     let phoneRadio = document.getElementById("p-phone");
@@ -97,9 +124,11 @@ function validCheck(e){
 
         document.getElementById("formSub").innerHTML = `<strong>User Name: </strong>${customer.fullName}<br><strong>Preferred contact: </strong>${customer.preferredContact}<br><strong>Contact Information: </strong>${emailRadio.checked ? customer.email : customer.phone}<br><strong>Comment: </strong>${customer.comments}`;
 
-        document.getElementsByClassName("quoteForm").reset();
+        document.querySelector(".quoteForm").reset();
     }
 }   
+
+
    
 
 
