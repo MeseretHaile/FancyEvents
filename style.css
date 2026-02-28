@@ -55,29 +55,26 @@ table {
 /*root variables*/
 :root{
     --bg-color: #f7e6ca;
-
     --header-bg: #e5c080;
+   
 
     --bg-offwhite: #fffbf4;
-
+ 
+    --slog:#e3d79a;
     --bg-lcream:#FFEAAB;
     --bg-coff: #8A5E10;
     --bg-gold: #DAA520;
-    
     --bg-bwm: #af8a4d;
     --dk-gry: #464646;
-
     
-
 }
 
 body.dark{
-    --dkh-color: #fffbf4;
-    --dkat-white: #FFFDD0;
-    --dk-bg: #1A1A1A;
-    --dk-bg:#402b26;
-    --dk: #ff7a95;
-    --coff: #6f4e37;
+    --bg-color: #3b2703;
+    --header-bg: #6b4709;
+    --bg-offwhite: #6b4709;
+    --bg-bwm: #826434;
+    --dk-gry: #fffbf4;
 }
 
 body{
@@ -146,7 +143,6 @@ nav a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
- 
 }
 
 h2{
@@ -155,7 +151,7 @@ h2{
 
 .slogan h2{
     font-size:60px;
-    color:rgb(227, 215, 154);
+    color:var(--slog);
     text-align:center;
     padding: 25px 40px;
    
@@ -174,6 +170,7 @@ main section:nth-of-type(2){
 .about h2{
     font-family:"Lora", serif;
     font-size: 36px;
+    color: var(--dk-gry);
     
 }
 
@@ -199,15 +196,16 @@ main section:nth-of-type(2){
     border-radius: 8px;
 }
 
-.services h3{
+.services h2{
     font-family: "Lora", serif;
     font-size: 2.5rem;
     margin-bottom: 10px;
+    color: var(--dk-gry);
+   
 }
 
 .serviceList{
     display: none;
-    
     
 }
 
@@ -237,6 +235,9 @@ main section:nth-of-type(2){
 .serviceText ul{
     padding-left: 18px;
     line-height: 2.5;
+    text-align: left;
+    color: var(--dk-gry);
+    font-weight: bold;
 }
 .serviceText ul li{
     font-size: 1.25rem;
@@ -270,7 +271,7 @@ hr{
     text-decoration: none;
     font-family:"Inter", sans-serif;
     font-size: 16px;
-    color: black;
+    color: var(--bg-coff);
     padding-bottom: 8px;
     position: relative;
 }
@@ -366,7 +367,7 @@ hr{
     margin-bottom: 8px;
 }
 
-#quoteForm input,
+#quoteForm input:not([type="radio"]),
 #quoteForm textarea{
     border: 2px solid var(--bg-gold);
     border-radius: 8px;
@@ -376,12 +377,16 @@ hr{
     font-size: 1.5rem;
 }
 
-fieldset label{
-    display: inline-flex;
+fieldset{
+    border: 2px solid var(--bg-coff);
+    padding: 5px;
+    display: flex;
     align-items: center;
-    gap: 8px;
-    margin-right: 16px;
-    margin-top: 0;
+    gap: 20px
+}
+
+fieldset label{
+    font-size: 1rem;
 }
 
 form button{
@@ -402,20 +407,14 @@ form button{
 form button:hover{
     background-color: var(--bg-gold);
 }
-fieldset{
-    border: 2px solid var(--bg-coff);
-    padding: 5px;
-    display: flex;
-}
+
 
 legend{
     font-size: 1.25rem;
     font-weight: bold;
     padding: 10px;
 }
-fieldset label{
-    font-size: 3rem;
-}
+
 span{
     color:red;
 }

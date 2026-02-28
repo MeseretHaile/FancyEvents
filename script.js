@@ -55,8 +55,6 @@ function matchNumber(e) {
 
 
 
-
-
 //validate form section
 //register a handler for the form
 document.addEventListener("DOMContentLoaded", formValidCheck);
@@ -128,6 +126,16 @@ function validCheck(e){
     }
 }   
 
+document.addEventListener("DOMContentLoaded", darkMode);
+
+function darkMode(){
+    let darkMode = document.getElementById("darkMode");
+    darkMode.addEventListener("click", changeDarkMode);
+}
+
+function changeDarkMode(){
+    document.body.classList.toggle("dark");
+}
 
    
 
