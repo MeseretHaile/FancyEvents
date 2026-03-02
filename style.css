@@ -2,7 +2,7 @@
 /* Imported Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Luxurious+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 /* CSS reset */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -123,7 +123,7 @@ nav ul{
 
 nav a{
     text-decoration: none;
-    font-family: "kavoon", sans-serif;
+    font-family: "Roboto", sans-serif;
     color: var(--dk-gry);
     font-size: 1.2rem;
 }
@@ -178,7 +178,7 @@ main section:nth-of-type(2){
 .about > p{
     max-width: 900px;  
     margin: 0 auto;    
-    font-family: "Lora", serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.5rem;
     padding: 30px;
     color: var(--dk-gry);
@@ -196,11 +196,13 @@ main section:nth-of-type(2){
     border-radius: 8px;
 }
 
-.services h2{
+.services h2, h3{
     font-family: "Lora", serif;
     font-size: 2.5rem;
     margin-bottom: 10px;
     color: var(--dk-gry);
+    text-align:center;
+
    
 }
 
@@ -217,6 +219,7 @@ main section:nth-of-type(2){
     align-items: stretch;
     background-color: var(--bg-offwhite);
 }
+
 
 
 .serviceList img{
@@ -236,11 +239,26 @@ main section:nth-of-type(2){
     padding-left: 18px;
     line-height: 2.5;
     text-align: left;
-    color: var(--dk-gry);
+    
     font-weight: bold;
 }
 .serviceText ul li{
     font-size: 1.25rem;
+    color: var(--dk-gry);
+    
+}
+.serviceText a{
+    background-color: var(--bg-bwm);
+    padding: 10px ;
+    text-align: center;
+    color: var(--bg-offwhite);
+    text-decoration: none;
+    border-radius: 10px;
+    
+}
+.serviceText a:hover{
+    background-color: var(--bg-gold);
+
 }
 
 .serviceLink{
@@ -254,9 +272,7 @@ main section:nth-of-type(2){
     
    
 }
-.serviceLink a{
-    font-size: 1.25rem;
-}
+
 .serviceLink a:hover{
     text-decoration: underline;
 }
@@ -269,8 +285,8 @@ hr{
 }
 .tab{
     text-decoration: none;
-    font-family:"Inter", sans-serif;
-    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
     color: var(--bg-coff);
     padding-bottom: 8px;
     position: relative;
@@ -280,22 +296,48 @@ hr{
     opacity: 0.7;
 }
 
+
 .playGame{
     background: var(--bg-bwm);
     padding: 60px 20px;
     text-align: center;
     color: var(--bg-offwhite);
+    
+}
+
+.rentals{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 15px;
+    
+}
+
+.rentals img{
+    width: 85%;
+    height: 350px;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+.rentals p{
+    font-size: 1.2rem;
+    font-family: "Lora", serif;
+    color:var(--dk-gry);
+}
+.rentals > div{
+    text-align: center;
 }
 
 .playGame p{
     font-size: 28px;
     margin-bottom: 5px;
+    font-family: "Roboto", sans-serif;
 }
 
 .playGame h2{
     font-size: 36px;
-    margin-bottom: 25px;
-    color: var(--dk-gry);
+    margin-bottom: 15px;
+    color: var(--bg-offwhite);
 }
 
 .playGame form{
@@ -303,12 +345,12 @@ hr{
     flex-direction: column;
     align-items: center;
     gap: 12px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .playGame label{
-    font-weight: bold;
     font-size: 1.5rem;
+    font-family: "Roboto", sans-serif;
 }
 
 .playGame input{
@@ -327,7 +369,7 @@ hr{
 }
 
 .quoteSection h2{
-    font-family: "Kavoon", serif;
+    font-family: "Roboto", sans-serif;
     color: var(--bg-gold);
     font-size: 35px;
     text-align: center;
@@ -349,7 +391,8 @@ hr{
 }
 
 .quoteSection p{
-    font-family: "Inter", sans-serif;
+    font-family: "Roboto", sans-serif;
+    color: var(--dk-gry);
     font-weight: 700;
     font-size: 28px;
     margin-bottom: 25px;
@@ -361,10 +404,11 @@ hr{
 
 #quoteForm label{
     display: block;
-    font-family: "Inter", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.5rem;
     margin-top: 18px;
     margin-bottom: 8px;
+    color: var(--dk-gry);
 }
 
 #quoteForm input:not([type="radio"]),
@@ -387,7 +431,9 @@ fieldset{
 
 fieldset label{
     font-size: 1rem;
+    color: var(--dk-gry);
 }
+
 
 form button{
     display: block;
@@ -407,12 +453,20 @@ form button{
 form button:hover{
     background-color: var(--bg-gold);
 }
+ 
+input:focus,
+textarea:focus {
+
+  box-shadow: 0 0 0 3px rgb(105, 103, 103);
+  outline: none; 
+}
 
 
 legend{
     font-size: 1.25rem;
     font-weight: bold;
     padding: 10px;
+    color: var(--dk-gry);
 }
 
 span{
