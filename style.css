@@ -52,23 +52,20 @@ table {
 	border-spacing: 0;
 }
 
-/*root variables*/
+/* ROOT COLOR VARIABLES */
 :root{
     --bg-color: #f7e6ca;
     --header-bg: #e5c080;
-   
-
     --bg-offwhite: #fffbf4;
- 
     --slog:#e3d79a;
     --bg-lcream:#FFEAAB;
     --bg-coff: #8A5E10;
     --bg-gold: #DAA520;
     --bg-bwm: #af8a4d;
     --dk-gry: #464646;
-    
 }
 
+/* DARK MODE VARIABLES */
 body.dark{
     --bg-color: #3b2703;
     --header-bg: #6b4709;
@@ -77,6 +74,7 @@ body.dark{
     --dk-gry: #fffbf4;
 }
 
+/* GLOBAL BODY and LAYOUT STYLE */
 body{
     width: 1280px;
     line-height: 1.5;  
@@ -86,11 +84,12 @@ body{
 img {
     width: 100%;
 }
+
 main {
     background-color: var(--bg-color);
 }
 
-/* Header Style */
+/* HEADER and NAVIGATION STYLE */
 header {
     display: flex;
     align-items: center;
@@ -99,11 +98,9 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-
 }
 
 header img{
-    
     width: 25px;
 }
 
@@ -132,6 +129,7 @@ nav a:hover{
     color: var(--var-coff)
 }
 
+/* SLOGAN SECTION STYLE */
 .slogan{
     width: 100%;
     background:
@@ -154,26 +152,24 @@ h2{
     color:var(--slog);
     text-align:center;
     padding: 25px 40px;
-   
 }
+
 main section:nth-of-type(2){
     width: 90%;
     margin: 0 auto;
 }
 
+/* ABOUT SECTION STYLE */
 .about{
     padding-top: 50px;
     text-align: center;
-   
 }
 
 .about h2{
     font-family:"Lora", serif;
     font-size: 36px;
     color: var(--dk-gry);
-    
 }
-
 
 .about > p{
     max-width: 900px;  
@@ -183,12 +179,14 @@ main section:nth-of-type(2){
     padding: 30px;
     color: var(--dk-gry);
 }
+
 .about p:nth-of-type(2){
     font-weight: bold;
     font-size: 2rem;
     color: var(--bg-bwm);
-
 }
+
+/* SERVICES SECTION STYLE */
 .services{
     padding: 40px 20px;
     text-align: center;
@@ -202,13 +200,10 @@ main section:nth-of-type(2){
     margin-bottom: 10px;
     color: var(--dk-gry);
     text-align:center;
-
-   
 }
 
 .serviceList{
     display: none;
-    
 }
 
 .serviceList.active{
@@ -220,14 +215,11 @@ main section:nth-of-type(2){
     background-color: var(--bg-offwhite);
 }
 
-
-
 .serviceList img{
     width: 80%;
     height: 500px;
     object-fit: cover;
     justify-self:center;
-    
 }
 
 .serviceText p{
@@ -239,14 +231,14 @@ main section:nth-of-type(2){
     padding-left: 18px;
     line-height: 2.5;
     text-align: left;
-    
     font-weight: bold;
 }
+
 .serviceText ul li{
     font-size: 1.25rem;
     color: var(--dk-gry);
-    
 }
+
 .serviceText a{
     background-color: var(--bg-bwm);
     padding: 10px ;
@@ -254,11 +246,10 @@ main section:nth-of-type(2){
     color: var(--bg-offwhite);
     text-decoration: none;
     border-radius: 10px;
-    
 }
+
 .serviceText a:hover{
     background-color: var(--bg-gold);
-
 }
 
 .serviceLink{
@@ -269,13 +260,12 @@ main section:nth-of-type(2){
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto ;
-    
-   
 }
 
 .serviceLink a:hover{
     text-decoration: underline;
 }
+
 hr{
     height:3px;
     background-color: var(--bg-color);
@@ -283,6 +273,7 @@ hr{
     width: 70%
 
 }
+
 .tab{
     text-decoration: none;
     font-family: "Roboto", sans-serif;
@@ -296,21 +287,19 @@ hr{
     opacity: 0.7;
 }
 
-
 .playGame{
     background: var(--bg-bwm);
     padding: 60px 20px;
     text-align: center;
     color: var(--bg-offwhite);
-    
 }
 
+/* RENTALS SECTION STYLE */
 .rentals{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
     margin-bottom: 15px;
-    
 }
 
 .rentals img{
@@ -319,11 +308,13 @@ hr{
     border-radius: 20px;
     margin: 0 auto;
 }
+
 .rentals p{
     font-size: 1.2rem;
     font-family: "Lora", serif;
     color:var(--dk-gry);
 }
+
 .rentals > div{
     text-align: center;
 }
@@ -334,6 +325,7 @@ hr{
     font-family: "Roboto", sans-serif;
 }
 
+/* PLAY AND WIN GAME SECTION STYLE */
 .playGame h2{
     font-size: 36px;
     margin-bottom: 15px;
@@ -361,6 +353,7 @@ hr{
     margin-top:10px;
 }
 
+/* QUOTE FORM SECTION STYLE */
 .quoteSection{
     padding: 100px 20px;
     display: flex;
@@ -396,6 +389,14 @@ hr{
     font-weight: 700;
     font-size: 28px;
     margin-bottom: 25px;
+}
+
+#success p{
+    font-size: 15px;
+}
+
+#success p:nth-of-type(2){
+    text-align: left;
 }
 
 #quoteForm{
@@ -434,7 +435,6 @@ fieldset label{
     color: var(--dk-gry);
 }
 
-
 form button{
     display: block;
     color: var(--bg-offwhite);
@@ -447,7 +447,6 @@ form button{
     text-align: center;
     font-size: 1.5rem;
     font-family: "Lora", serif;
-   
 }
 
 form button:hover{
@@ -461,7 +460,6 @@ textarea:focus {
   outline: none; 
 }
 
-
 legend{
     font-size: 1.25rem;
     font-weight: bold;
@@ -472,11 +470,12 @@ legend{
 span{
     color:red;
 }
+
 .hide{
     display:none;
 }
 
-
+/* FORM VALIDATION STYLE */
 .eMessage{
     display: none;
     color: orangered;
@@ -502,12 +501,13 @@ span{
   display: block;
 }
 
+/* FOOTER STYLE */
 footer{
     background-color: var(--header-bg);
     padding: 20px;
-    text-align: center;
-    
+    text-align: center; 
 }
+
 footer img{
     width: 35px;
 }
