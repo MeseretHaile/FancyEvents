@@ -63,6 +63,7 @@ table {
     --bg-gold: #DAA520;
     --bg-bwm: #af8a4d;
     --dk-gry: #464646;
+    --offwhite: #fffbf4;
 }
 
 /* DARK MODE VARIABLES */
@@ -72,6 +73,7 @@ body.dark{
     --bg-offwhite: #6b4709;
     --bg-bwm: #826434;
     --dk-gry: #fffbf4;
+    --bg-coff: #fffbf4;
 }
 
 /* GLOBAL BODY and LAYOUT STYLE */
@@ -240,7 +242,7 @@ main section:nth-of-type(2){
 }
 
 .serviceText a{
-    background-color: var(--bg-bwm);
+    background-color: var(--bg-coff);
     padding: 10px ;
     text-align: center;
     color: var(--bg-offwhite);
@@ -319,17 +321,18 @@ hr{
     text-align: center;
 }
 
+/* PLAY AND WIN GAME SECTION STYLE */
 .playGame p{
     font-size: 28px;
     margin-bottom: 5px;
     font-family: "Roboto", sans-serif;
+    color: var(--offwhite);
 }
 
-/* PLAY AND WIN GAME SECTION STYLE */
 .playGame h2{
     font-size: 36px;
     margin-bottom: 15px;
-    color: var(--bg-offwhite);
+    color: var(--offwhite);
 }
 
 .playGame form{
@@ -343,6 +346,7 @@ hr{
 .playGame label{
     font-size: 1.5rem;
     font-family: "Roboto", sans-serif;
+    color: var(--offwhite);
 }
 
 .playGame input{
@@ -351,6 +355,10 @@ hr{
     border-radius:6px;
     border:none;
     margin-top:10px;
+}
+
+.numberDisplay {
+    color: var(--offwhite);
 }
 
 /* QUOTE FORM SECTION STYLE */
